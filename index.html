@@ -8,6 +8,7 @@
       name="description"
       content="Escritório de advocacia em Pato Branco/PR. Direito Previdenciário, Trabalhista, Consumidor, Família, Inventários, Contratos e Civil."
     />
+    <link rel="icon" type="image/png-icon" href="assets/logo.webp" />
     <style>
       /* ============ VARIÁVEIS / DESIGN SYSTEM ============ */
       :root {
@@ -269,7 +270,7 @@
         content: '';
         position: absolute;
         inset: 0;
-        background: radial-gradient(circle at 78% 25%, rgba(216, 184, 135, 0.22), transparent 55%),
+        background: radial-gradient(circle at 58% 25%, rgba(226, 200, 148, 0.42), transparent 45%),
           radial-gradient(circle at 12% 85%, rgba(216, 184, 135, 0.12), transparent 50%);
       }
       .hero-glyph {
@@ -286,7 +287,7 @@
       }
       .hero-inner {
         position: relative;
-        max-width: 820px;
+        max-width: 940px;
       }
       .hero h1 {
         color: var(--branco);
@@ -300,7 +301,7 @@
       .hero p {
         color: #d7e3ea;
         font-size: 1.12rem;
-        max-width: 62ch;
+        max-width: 80ch;
       }
       .hero-actions {
         display: flex;
@@ -459,6 +460,17 @@
         padding: 5px 12px;
         border-radius: 999px;
       }
+      .instagram-tag {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: 0.62rem;
+        letter-spacing: 0.14em;
+        color: #e1306c;
+        border: 1px solid #e1306c99;
+        padding: 2.5px 6px;
+        border-radius: 999px;
+        margin-left: auto;
+      }
       .adv-body p {
         color: var(--cinza);
         margin-top: 16px;
@@ -469,6 +481,7 @@
         flex-wrap: wrap;
         gap: 8px;
         margin-top: 18px;
+        cursor: default;
       }
       .tag {
         background: rgba(34, 69, 93, 0.07);
@@ -928,7 +941,7 @@
     <header class="header">
       <div class="header-inner">
         <a class="brand" href="#inicio">
-          <img src="logo.png" alt="Rodrigues &amp; Schimanko Advocacia" />
+          <img src="assets/logo.webp" alt="Rodrigues &amp; Schimanko Advocacia" />
           <span class="brand-name">Rodrigues &amp; Schimanko<span>Advocacia</span></span>
         </a>
         <nav class="nav" aria-label="Navegação principal">
@@ -947,11 +960,9 @@
       <section class="hero" id="inicio">
         <span class="hero-glyph" aria-hidden="true">§</span>
         <div class="container hero-inner">
-          <p class="eyebrow reveal">
-            Pato Branco<!-- • Chopinzinho -->
-            — Paraná | Online para todo o Brasil
-          </p>
+          <img src="assets/front.webp" />
           <h1 class="reveal d1">Advocacia estratégica, responsável e <em>próxima de você</em>.</h1>
+          <p class="eyebrow reveal">Pato Branco • Chopinzinho e região — Paraná | Online para todo o Brasil</p>
           <p class="reveal d2">Atuação jurídica pautada na ética, na confiança e na busca pelas melhores soluções para cada cliente.</p>
           <div class="hero-actions reveal d3">
             <a class="btn btn-gold" target="_blank" href="https://share.google/lxisB7lsa7VWLOY6t">Conheça nosso escritório</a>
@@ -1006,10 +1017,17 @@
           <div class="adv-grid">
             <!-- Advogada 1 -->
             <article class="adv-card">
-              <div class="adv-foto"><img src="tainara-rodrigues-hartmann.jpg" alt="Advogada Tainara Rodrigues Hartmann" /></div>
+              <div class="adv-foto">
+                <img src="assets/tainara.webp" alt="Advogada Tainara Rodrigues Hartmann" style="object-position: center top" />
+              </div>
               <div class="adv-body">
                 <h3>Tainara Rodrigues Hartmann</h3>
-                <span class="oab">Advogada — OAB/PR 116.961</span>
+                <div style="display: flex; align-items: center">
+                  <span class="oab">Advogada — OAB/PR 116.961</span>
+                  <a class="instagram-tag" href="https://www.instagram.com/tainararodrigueshadv?igsh=MWw3bnI5ZWpxem44Zg==" target="_blankx"
+                    >@tainararodrigueshadv</a
+                  >
+                </div>
                 <div class="tags">
                   <span class="tag">Direito Previdenciário</span>
                   <span class="tag">Direito do Trabalho</span>
@@ -1024,10 +1042,15 @@
             </article>
             <!-- Advogada 2 -->
             <article class="adv-card">
-              <div class="adv-foto"><img src="cleia-schimanko.jpg" alt="Advogada Cleia Schimanko" /></div>
+              <div class="adv-foto"><img src="assets/cleia.webp" alt="Advogada Cleia Schimanko" style="object-position: center 27%" /></div>
               <div class="adv-body">
                 <h3>Cleia Schimanko</h3>
-                <span class="oab">Advogada — OAB/PR 117.037</span>
+                <div style="display: flex; align-items: center">
+                  <span class="oab">Advogada — OAB/PR 117.037</span>
+                  <a class="instagram-tag" target="_blank" href="https://www.instagram.com/cleiaschimanko.adv?igsh=MWl0bTE0YjZoZmprYg=="
+                    >@cleiaschimanko.adv</a
+                  >
+                </div>
                 <div class="tags">
                   <span class="tag">Direito de Família</span>
                   <span class="tag">Inventários</span>
@@ -1125,7 +1148,7 @@
               <ul>
                 <li>Elaboração de contratos</li>
                 <li>Revisão contratual</li>
-                <li>Análise de riscos</li>
+                <li>Análise de riscos em contratos de compra e venda</li>
                 <li>Rescisão e distrato</li>
                 <li>Cobranças</li>
                 <li>Negociações</li>
@@ -1272,7 +1295,7 @@
             <div class="info-card">
               <h3>Localização e horário</h3>
               <p>Rua Itabira, nº 1193, Centro, Pato Branco — PR</p>
-              <p>Horário: Segunda a sexta-feira, das 8h às 17h</p>
+              <p>Horário: Segunda a sexta-feira, das 8h às 18h preferencialmente mediante agendamento</p>
             </div>
           </div>
         </div>
@@ -1292,8 +1315,6 @@
               <a href="https://instagram.com/rodrigueseschimankoadv" target="_blank" class="instagram-link">
                 <img src="https://static.cdnlogo.com/logos/i/92/instagram.svg" alt="Instagram Profile" class="instagram-icon" />
               </a>
-              <a href="#contato" aria-label="Facebook do escritório">FB</a>
-              <a href="#contato" aria-label="LinkedIn do escritório">IN</a>
             </div>
           </div>
           <div>
@@ -1310,10 +1331,10 @@
           <div>
             <h4>Contato</h4>
             <ul>
-              <li>Tainara: (46) 98401-5240</li>
-              <li>Cleia: (46) 99923-9342</li>
+              <li><a href="https://wa.me/5546984015240">Tainara: (46) 98401-5240</a></li>
+              <li><a href="https://wa.me/5546999239342">Cleia: (46) 99923-9342</a></li>
               <li><a href="mailto:rodrigueseschimankoadv@gmail.com">rodrigueseschimankoadv@gmail.com</a></li>
-              <li>Segunda a sexta-feira, das 8h às 18h</li>
+              <li>Segunda a sexta-feira, das 8h às 18h preferencialmente mediante agendamento</li>
             </ul>
           </div>
         </div>
