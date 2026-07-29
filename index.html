@@ -16,7 +16,7 @@
     <link rel="canonical" href="https://rodrigueseschimanko.adv.br/" />
 
     <!-- OPEN GRAPH (Google + redes + IA) -->
-    <meta property="og:title" content="Rodrigues & Schimanko Advocacia - Pato Branco PR" />
+    <meta property="og:title" content="Rodrigues & Schimanko Advocacia Trabalhista e INSS - Pato Branco PR" />
     <meta
       property="og:description"
       content="Atendimento jurídico estratégico e personalizado em Pato Branco e região. Direito Previdenciário, Trabalhista, Família e Civil."
@@ -973,6 +973,85 @@
           scroll-behavior: auto !important;
         }
       }
+      /* ============ CONTEÚDO / BLOG CTA ============ */
+      .conteudo {
+        background: var(--claro);
+      }
+
+      .conteudo-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 40px;
+        margin-top: 50px;
+        align-items: stretch;
+      }
+
+      /* TEXTO */
+      .conteudo-texto p {
+        color: var(--cinza);
+        margin-bottom: 16px;
+        max-width: 60ch;
+      }
+
+      /* CARD DO POST */
+      .post-preview {
+        background: var(--branco);
+        border: 1px solid var(--cinza-claro);
+        border-radius: var(--radius);
+        padding: 30px;
+        box-shadow: var(--sombra);
+        position: relative;
+        transition: all 0.35s ease;
+      }
+
+      .post-preview:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--sombra-forte);
+        border-color: var(--dourado);
+      }
+
+      .post-preview::before {
+        content: '';
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 4px;
+        background: linear-gradient(180deg, var(--dourado), transparent);
+      }
+
+      /* TAG */
+      .post-tag {
+        display: inline-block;
+        font-size: 0.7rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--dourado-escuro);
+        margin-bottom: 10px;
+      }
+
+      /* TÍTULO */
+      .post-preview h3 {
+        color: var(--azul);
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      /* TEXTO */
+      .post-preview p {
+        color: var(--cinza);
+        font-size: 0.95rem;
+      }
+
+      /* BOTÃO */
+      .post-preview .btn {
+        margin-top: 16px;
+      }
+
+      /* RESPONSIVO */
+      @media (max-width: 900px) {
+        .conteudo-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
   <body>
@@ -990,6 +1069,7 @@
           <a href="#areas">Áreas de atuação</a>
           <a href="#escritorios">Escritórios</a>
           <a href="#contato">Contato</a>
+          <a href="posts.html">Mais informações</a>
         </nav>
       </div>
     </header>
@@ -1212,6 +1292,52 @@
                 Atendimento preventivo e estratégico para pessoas físicas, profissionais e empresas, com análise de documentos, contratos,
                 riscos e tomada de decisões juridicamente seguras.
               </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTEÚDO / EDUCAÇÃO ============ -->
+      <section class="conteudo">
+        <div class="container">
+          <div class="center">
+            <p class="eyebrow">Informação jurídica</p>
+            <h2 class="section-title">Conhecimento é o primeiro passo para defender seus direitos</h2>
+            <div class="rule center"></div>
+            <p class="lead">
+              Muitas pessoas deixam de buscar seus direitos simplesmente por não saberem que eles existem. Nosso conteúdo é pensado para
+              esclarecer dúvidas reais e orientar decisões com segurança.
+            </p>
+          </div>
+
+          <div class="conteudo-grid">
+            <!-- TEXTO -->
+            <div class="conteudo-texto">
+              <p>
+                Entender sua situação jurídica pode fazer toda a diferença no resultado de um problema. Em muitos casos, um direito só deixa
+                de ser exercido por falta de informação.
+              </p>
+
+              <p>
+                Por isso, produzimos conteúdos objetivos e acessíveis, explicando situações comuns do dia a dia e quando é o momento de
+                buscar orientação profissional.
+              </p>
+
+              <a href="/posts.html" class="btn btn-blue"> Ver todos os conteúdos </a>
+            </div>
+
+            <!-- ÚLTIMO POST (MANUAL) -->
+            <article class="post-preview">
+              <span class="post-tag">Artigo recente</span>
+
+              <h3>Voltei a trabalhar após um acidente: ainda tenho direito ao auxílio-acidente?</h3>
+
+              <p>
+                Muitas pessoas acreditam que, ao voltar ao trabalho, perdem automaticamente o direito a benefícios. Entenda quando o
+                auxílio-acidente ainda pode ser devido.
+              </p>
+
+              <a href="/posts/trabalho-pos-auxilio-acidente.html" class="btn btn-outline"> Ler artigo completo </a>
             </article>
           </div>
         </div>

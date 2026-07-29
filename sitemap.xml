@@ -1,5 +1,14 @@
 <urlset xmlns="http://www.rodrigueseschimanko.adv.br/schemas/sitemap/0.9">
   <url>
     <loc>https://rodrigueseschimanko.adv.br/</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://rodrigueseschimanko.adv.br/posts
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://rodrigueseschimanko.adv.br/posts/trabalho-pos-auxilio-acidente
+    <lastmod>2026-07-29</lastmod>
   </url>
 </urlset>
