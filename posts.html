@@ -71,148 +71,36 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/png-icon" href="assets/logo.webp" />
 
-    <link rel="stylesheet" href="/style/structure.css" />
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background: var(--claro);
-      }
-
-      main {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 60px 20px;
-      }
-
-      .hero-posts {
-        text-align: center;
-        padding: 20px 0;
-      }
-
-      .hero-posts h1 {
-        font-size: clamp(2rem, 4vw, 2.8rem);
-        color: var(--azul);
-      }
-
-      .hero-posts p {
-        max-width: 60ch;
-        margin: 12px auto;
-        color: var(--cinza);
-      }
-
-      /* GRID */
-      .posts-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 28px;
-        padding: 40px 0;
-      }
-
-      /* CARD */
-      .post-card {
-        background: var(--branco);
-        border: 1px solid var(--cinza-claro);
-        border-radius: var(--radius);
-        padding: 26px;
-        box-shadow: var(--sombra);
-        transition: all 0.3s ease;
-        position: relative;
-      }
-
-      .post-card:hover {
-        transform: translateY(-6px);
-        box-shadow: var(--sombra-forte);
-        border-color: var(--dourado);
-      }
-
-      .post-card::before {
-        content: '';
-        position: absolute;
-        inset: 0 auto 0 0;
-        width: 4px;
-        background: linear-gradient(180deg, var(--dourado), transparent);
-      }
-
-      .post-card h2 {
-        color: var(--azul);
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-      }
-
-      .post-card p {
-        color: var(--cinza);
-        font-size: 0.95rem;
-      }
-
-      .post-card a {
-        display: inline-block;
-        margin-top: 14px;
-        font-weight: 600;
-        color: var(--azul);
-      }
-
-      /* CTA FINAL */
-      .cta-posts {
-        margin-top: 80px;
-        padding: 50px 30px;
-        background: linear-gradient(135deg, var(--azul), var(--azul-escuro));
-        border-radius: 20px;
-        text-align: center;
-        color: white;
-      }
-
-      .cta-posts h2 {
-        font-size: 1.8rem;
-      }
-
-      .cta-posts p {
-        max-width: 60ch;
-        margin: 12px auto;
-        color: #d7e3ea;
-      }
-
-      .cta-posts a {
-        margin-top: 16px;
-        display: inline-block;
-        background: var(--dourado);
-        color: #000;
-        padding: 14px 26px;
-        border-radius: 8px;
-        font-weight: bold;
-      }
-    </style>
+    <link rel="stylesheet" href="/style/general.css" />
+    <link rel="stylesheet" href="/style/posts.css" />
   </head>
 
   <body>
     <!-- ============ CABEÇALHO ============ -->
     <header class="header">
-      <div class="header-inner">
-        <a class="brand" href="/index.html">
-          <img src="/assets/logo.webp" alt="Rodrigues &amp; Schimanko Advocacia" />
-          <span class="brand-name">Rodrigues &amp; Schimanko<span>Advocacia</span></span>
-        </a>
-        <nav class="nav" aria-label="Navegação principal">
-          <a href="/index.html">Página inicial</a>
-          <a href="#footer">Contato</a>
-        </nav>
-      </div>
+      <a class="brand" href="/index.html">
+        <img src="/assets/logo.webp" alt="Rodrigues &amp; Schimanko Advocacia" />
+        <span class="brand-name">Rodrigues &amp; Schimanko<span>Advocacia</span></span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/index.html">Página inicial</a>
+        <a href="#footer">Contato</a>
+      </nav>
     </header>
     <!-- ============ HERO ============ -->
     <section class="hero" id="inicio">
       <span class="hero-glyph" aria-hidden="true">§</span>
-      <div class="container hero-inner">
-        <img src="/assets/front.webp" style="filter: drop-shadow(0 0 3px #fff5)" />
-        <h1 class="reveal d1">Advocacia estratégica, responsável e <em>próxima de você</em>.</h1>
-        <p class="eyebrow reveal">Pato Branco • Chopinzinho e região — Paraná | Online para todo o Brasil</p>
-        <p class="reveal d2">Atuação jurídica pautada na ética, na confiança e na busca pelas melhores soluções para cada cliente.</p>
-        <div class="hero-actions reveal d3">
-          <a class="btn btn-gold" target="_blank" href="https://share.google/lxisB7lsa7VWLOY6t">Conheça nosso escritório</a>
-          <a class="btn btn-ghost" href="/index.html#contato">Fale conosco</a>
-        </div>
+      <img src="/assets/front.webp" />
+      <h1 class="reveal d1">Advocacia estratégica, responsável e <em>próxima de você</em>.</h1>
+      <p class="eyebrow reveal">Pato Branco • Chopinzinho e região — Paraná | Online para todo o Brasil</p>
+      <p class="reveal d2">Atuação jurídica pautada na ética, na confiança e na busca pelas melhores soluções para cada cliente.</p>
+      <div class="hero-actions reveal d3">
+        <a class="btn filled" target="_blank" href="https://share.google/lxisB7lsa7VWLOY6t">Conheça nosso escritório</a>
+        <a class="btn hollow" href="/index.html#contato">Fale conosco</a>
       </div>
     </section>
     <main>
-      <section class="hero-posts">
+      <section class="introduction">
         <h1>Conteúdo jurídico para entender seus direitos</h1>
         <p>
           Informação clara e objetiva sobre direitos previdenciários e situações do dia a dia. Conhecimento é o primeiro passo para tomar
@@ -221,30 +109,55 @@
       </section>
 
       <!-- POSTS -->
-      <section class="posts-grid">
+      <section class="post-list">
         <!-- POST 1 -->
         <article class="post-card">
-          <h2>Voltei a trabalhar após acidente: ainda tenho direito ao auxílio-acidente?</h2>
+          <em class="eyebrow">auxílio acidente</em>
+          <h2 href="/posts/trabalho-pos-auxilio-acidente.html">
+            <a> Voltei a trabalhar após acidente: ainda tenho direito ao auxílio-acidente? </a>
+          </h2>
           <p>Entenda quando é possível receber o benefício mesmo após retornar ao trabalho e quais são os critérios legais.</p>
-          <a href="/posts/trabalho-pos-auxilio-acidente.html"> Ler artigo → </a>
+          <hr style="color: var(--primary); margin: 10px auto; opacity: 0.75; width: 80%" />
+          <div style="display: flex; align-items: center; justify-content: space-between">
+            <p style="font-family: var(--font1)">Data de publicação: 29 de julho de 2026</p>
+            <a class="read-link" href="/posts/trabalho-pos-auxilio-acidente.html"> Ler artigo <span> ⮞ </span> </a>
+          </div>
         </article>
 
         <article class="post-card">
-          <h2>Posso receber dois salários-maternidade? Entenda quando isso é possível</h2>
+          <em class="eyebrow">salário materninade</em>
+          <h2>
+            <a href="/posts/receber-dois-salarios-maternidade.html">
+              Posso receber dois salários-maternidade? Entenda quando isso é possível
+            </a>
+          </h2>
           <p>
             Entenda quando é possível receber dois salários-maternidade do INSS, quem pode ter direito e se a gestante que ainda não
             contribui pode obter o benefício.
           </p>
-          <a href="/posts/receber-dois-salarios-maternidade.html"> Ler artigo → </a>
+          <hr style="color: var(--primary); margin: 10px auto; opacity: 0.75; width: 80%" />
+          <div style="display: flex; align-items: center; justify-content: space-between">
+            <p style="font-family: var(--font1)">Data de publicação: 04 de agosto de 2026</p>
+            <a class="read-link" href="/posts/receber-dois-salarios-maternidade.html"> Ler artigo <span> ⮞ </span> </a>
+          </div>
         </article>
 
         <article class="post-card">
-          <h2>Doação de imóvel para filhos: como fazer sem causar problemas na herança?</h2>
+          <em class="eyebrow">doação de imóvel</em>
+          <h2>
+            <a href="/posts/doacao-de-imoveis-para-filhos.html">
+              Doação de imóvel para filhos: como fazer sem causar problemas na herança?
+            </a>
+          </h2>
           <p>
             Entenda como fazer a doação de imóvel para filhos, respeitar a legítima dos herdeiros, beneficiar o filho cuidador e incluir
             cláusulas de proteção.
           </p>
-          <a href="/posts/doacao-de-imoveis-para-filhos.html"> Ler artigo → </a>
+          <hr style="color: var(--primary); margin: 10px auto; opacity: 0.75; width: 80%" />
+          <div style="display: flex; align-items: center; justify-content: space-between">
+            <p style="font-family: var(--font1)">Data de publicação: 04 de agosto de 2026</p>
+            <a class="read-link" href="/posts/doacao-de-imoveis-para-filhos.html"> Ler artigo <span> ⮞ </span> </a>
+          </div>
         </article>
 
         <!-- FUTUROS POSTS -->
@@ -259,43 +172,41 @@
           garantir seus direitos.
         </p>
 
-        <a href="https://wa.me/5546984015240"> Falar com advogado </a>
+        <a href="https://wa.me/5546984015240" target="_blank"> Falar com advogado </a>
       </section>
     </main>
     <!-- ============ RODAPÉ ============ -->
     <footer class="footer" id="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <h4>Rodrigues &amp; Schimanko Advocacia</h4>
-            <p>Tainara Rodrigues Rodrigues — OAB/PR 116.961</p>
-            <p>Cleia Schimanko — OAB/PR 117.037</p>
-            <p>Pato Branco — Paraná</p>
-            <div class="social">
-              <a href="https://instagram.com/rodrigueseschimankoadv" target="_blank" class="instagram-link">
-                <img src="https://static.cdnlogo.com/logos/i/92/instagram.svg" alt="Instagram Profile" class="instagram-icon" />
-              </a>
-            </div>
-          </div>
-          <div>
-            <h4>Navegação</h4>
-            <ul>
-              <li><a href="https://rodrigueseschimanko.adv.br">Página inicial</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Contato</h4>
-            <ul>
-              <li><a href="https://wa.me/5546984015240">Tainara: (46) 98401-5240</a></li>
-              <li><a href="https://wa.me/5546999239342">Cleia: (46) 99923-9342</a></li>
-              <li><a href="mailto:rodrigueseschimankoadv@gmail.com">rodrigueseschimankoadv@gmail.com</a></li>
-              <li>Segunda a sexta-feira, das 8h às 18h preferencialmente mediante agendamento</li>
-            </ul>
+      <div class="footer-grid">
+        <div>
+          <h4>Rodrigues &amp; Schimanko Advocacia</h4>
+          <p>Tainara Rodrigues Hartmann — OAB/PR 116.961</p>
+          <p>Cleia Schimanko — OAB/PR 117.037</p>
+          <p>Pato Branco — Paraná</p>
+          <div class="social">
+            <a href="https://instagram.com/rodrigueseschimankoadv" target="_blank" class="instagram-link">
+              <img src="https://static.cdnlogo.com/logos/i/92/instagram.svg" alt="Instagram Profile" class="instagram-icon" />
+            </a>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>© 2026 Rodrigues &amp; Schimanko Advocacia. Todos os direitos reservados.</p>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="https://rodrigueseschimanko.adv.br">Página inicial</a></li>
+          </ul>
         </div>
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://wa.me/5546984015240">Tainara: (46) 98401-5240</a></li>
+            <li><a href="https://wa.me/5546999239342">Cleia: (46) 99923-9342</a></li>
+            <li><a href="mailto:rodrigueseschimankoadv@gmail.com">rodrigueseschimankoadv@gmail.com</a></li>
+            <li>Segunda a sexta-feira, das 8h às 18h preferencialmente mediante agendamento</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Rodrigues &amp; Schimanko Advocacia. Todos os direitos reservados.</p>
       </div>
     </footer>
   </body>
